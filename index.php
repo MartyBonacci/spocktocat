@@ -57,7 +57,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<h1>7</h1>
+				<h1 id="firstNumber">7</h1>
 			</div>
 			<div class="col-md-2 operations">
 				<h1 id="add">+</h1>
@@ -70,7 +70,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<h1>5</h1>
+				<h1 id="secondNumber">5</h1>
 			</div>
 			<div class="col-md-3">
 				<br/>
@@ -83,6 +83,13 @@
 
 
 		<script>
+			var valueOne = document.getElementById("firstNumber")
+			valueOne.textContent = 6;
+
+			var valueTwo = document.getElementById("secondNumber")
+			valueTwo.textContent = 9;
+
+
 			var result = document.getElementById("answer");
 
 			var plus = document.getElementById("add");
@@ -110,33 +117,6 @@
 			times.addEventListener("mouseenter",onImageEnter);
 
 		</script>
-
-<!--
-
-		<h2 id="status" >Pet me!</h2>
-		<img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/thumbs/cat.png">
-		<br>
-
-		<div id="cat-chat"></div>
-
-		<script>
-			var catPic = document.getElementById("cat-pic");
-			var picText = document.getElementById("status");
-			var onImageEnter = function () {
-				picText.textContent = "Purr";
-			};
-			var onImageLeave = function() {
-				picText.textContent = "Keep petting!";
-			};
-			var onImageClick = function() {
-				picText.textContent = "Meow";
-			};
-			catPic.addEventListener("click",onImageClick);
-			catPic.addEventListener("mouseenter",onImageEnter);
-			catPic.addEventListener("mouseleave",onImageLeave);
-
-		</script>
--->
 
 
 	</body>
