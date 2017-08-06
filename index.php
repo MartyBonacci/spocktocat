@@ -83,34 +83,43 @@
 
 
 		<script>
+
+// changes the value of the first number displayed
 			var valueOne = document.getElementById("firstNumber")
 			valueOne.textContent = 6;
-
+// changes the value of the second number displayed
 			var valueTwo = document.getElementById("secondNumber")
 			valueTwo.textContent = 9;
 
-
+// changes the value of the answer displayed
 			var result = document.getElementById("answer");
 
+
+// handles the calculations and display of the answer when mouse enter addition symbol
 			var plus = document.getElementById("add");
 			var onImageEnter = function () {
 				var total = valueOne + valueTwo;
-				result.textContent = "=" + "total";
+				result.textContent = "=" console.log(total);
 			};
 			plus.addEventListener("mouseenter",onImageEnter);
 
+
+// handles the calculations and display of the answer when mouse enter take away symbol
 			var takeAway = document.getElementById("subtract");
 			var onImageEnter = function () {
 				result.textContent = "=7-5";
 			};
 			takeAway.addEventListener("mouseenter",onImageEnter);
 
+
+// handles the calculations and display of the answer when mouse enter guzinto symbol
 			var goesInto = document.getElementById("divide");
 			var onImageEnter = function () {
 				result.textContent = "=7/5";
 			};
 			goesInto.addEventListener("mouseenter",onImageEnter);
 
+// handles the calculations and display of the answer when mouse enter multiplication symbol
 			var times = document.getElementById("multiply");
 			var onImageEnter = function () {
 				result.textContent = "=7*5";
