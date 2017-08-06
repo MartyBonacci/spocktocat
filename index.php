@@ -95,7 +95,7 @@
 			var plus = document.getElementById("add");
 			var onImageEnter = function () {
 				var total = valueOne + valueTwo;
-				result.textContent = "=" + total;
+				result.textContent = "=" + "total";
 			};
 			plus.addEventListener("mouseenter",onImageEnter);
 
