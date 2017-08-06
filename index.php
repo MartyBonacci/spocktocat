@@ -87,9 +87,11 @@
 // changes the value of the first number displayed
 			var valueOne = document.getElementById("firstNumber")
 			valueOne.textContent = 6;
+			firstValue = 6
 // changes the value of the second number displayed
 			var valueTwo = document.getElementById("secondNumber")
 			valueTwo.textContent = 9;
+			secondValue = 9;
 
 // changes the value of the answer displayed
 			var result = document.getElementById("answer");
@@ -98,7 +100,7 @@
 // handles the calculations and display of the answer when mouse enter addition symbol
 			var plus = document.getElementById("add");
 			var onImageEnter = function () {
-				var total = valueOne + valueTwo;
+				var total = firstValue + secondValue;
 				result.textContent = "=" + total;
 			};
 			plus.addEventListener("mouseenter",onImageEnter);
