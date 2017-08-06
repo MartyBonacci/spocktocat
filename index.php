@@ -111,7 +111,8 @@
 			// handles the calculations and display of the answer when mouse enter take away symbol
 			var takeAway = document.getElementById("subtract");
 			var onImageEnter = function() {
-				result.textContent = "=7-5";
+				var total = firstValue - secondValue;
+				result.textContent = "=" + total;
 			};
 			takeAway.addEventListener("mouseenter", onImageEnter);
 
@@ -119,14 +120,16 @@
 			// handles the calculations and display of the answer when mouse enter guzinto symbol
 			var goesInto = document.getElementById("divide");
 			var onImageEnter = function() {
-				result.textContent = "=7/5";
+				var total = firstValue / secondValue;
+				result.textContent = "=" + total;
 			};
 			goesInto.addEventListener("mouseenter", onImageEnter);
 
 			// handles the calculations and display of the answer when mouse enter multiplication symbol
 			var times = document.getElementById("multiply");
 			var onImageEnter = function() {
-				result.textContent = "=7*5";
+				var total = firstValue * secondValue;
+				result.textContent = "=" + total;
 			};
 			times.addEventListener("mouseenter", onImageEnter);
 
