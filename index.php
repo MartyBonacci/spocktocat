@@ -51,6 +51,7 @@
 		</header>
 
 		<div class="row">
+			<div class="col-md-2"></div>
 			<div class="col-md-2">
 				<br/>
 				<br/>
@@ -58,11 +59,11 @@
 				<br/>
 				<h1>7</h1>
 			</div>
-			<div class="col-md-3 operations">
-				<h1>+</h1>
-				<h1>-</h1>
-				<h1>/</h1>
-				<h1>*</h1>
+			<div class="col-md-2 operations">
+				<h1 id="add">+</h1>
+				<h1 id="subtract">-</h1>
+				<h1 id="divide">/</h1>
+				<h1 id="multiply">*</h1>
 			</div>
 			<div class="col-md-2">
 				<br/>
@@ -71,14 +72,73 @@
 				<br/>
 				<h1>5</h1>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-3">
 				<br/>
 				<br/>
 				<br/>
 				<br/>
-				<h1>= </h1>
+				<h1 id="answer">=   ?</h1>
 			</div>
 		</div>
+
+
+		<script>
+			var result = document.getElementById("answer");
+
+			var plus = document.getElementById("add");
+			var onImageEnter = function () {
+				result.textContent = "=7+5";
+			};
+			plus.addEventListener("mouseenter",onImageEnter);
+
+			var takeAway = document.getElementById("subtract");
+			var onImageEnter = function () {
+				result.textContent = "=7-5";
+			};
+			takeAway.addEventListener("mouseenter",onImageEnter);
+
+			var goesInto = document.getElementById("divide");
+			var onImageEnter = function () {
+				result.textContent = "=7/5";
+			};
+			goesInto.addEventListener("mouseenter",onImageEnter);
+
+			var times = document.getElementById("multiply");
+			var onImageEnter = function () {
+				result.textContent = "=7*5";
+			};
+			times.addEventListener("mouseenter",onImageEnter);
+
+		</script>
+
+<!--
+
+		<h2 id="status" >Pet me!</h2>
+		<img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/thumbs/cat.png">
+		<br>
+
+		<div id="cat-chat"></div>
+
+		<script>
+			var catPic = document.getElementById("cat-pic");
+			var picText = document.getElementById("status");
+			var onImageEnter = function () {
+				picText.textContent = "Purr";
+			};
+			var onImageLeave = function() {
+				picText.textContent = "Keep petting!";
+			};
+			var onImageClick = function() {
+				picText.textContent = "Meow";
+			};
+			catPic.addEventListener("click",onImageClick);
+			catPic.addEventListener("mouseenter",onImageEnter);
+			catPic.addEventListener("mouseleave",onImageLeave);
+
+		</script>
+-->
+
+
 	</body>
 </html>
 
