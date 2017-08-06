@@ -1,0 +1,14 @@
+/*****************************************************
+* Custom CSS Stylesheet
+* @author Marty Bonacci
+******************************************************/
+
+html, body{
+
+}
+
+
+.operations{
+	color: green;
+	font-weight: bold;
+}

@@ -41,11 +41,14 @@
 
 
 		<!-- custom CSS stylesheet -->
-		<!-- <link rel="stylesheet" href="css/style2.css" type="text/css"/> -->
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 
 		<title>spocktocat javascript assignment</title>
 	</head>
 	<body>
+		<header>
+			<p>Mouse over a green operation symbol for an answer.</p>
+		</header>
 
 		<div class="row">
 			<div class="col-md-2">
@@ -55,7 +58,7 @@
 				<br/>
 				<h1>7</h1>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 operations">
 				<h1>+</h1>
 				<h1>-</h1>
 				<h1>/</h1>
