@@ -94,7 +94,7 @@
 
 			var plus = document.getElementById("add");
 			var onImageEnter = function () {
-				result.textContent = "=7+5";
+				result.textContent = "=" valueOne + valueTwo;
 			};
 			plus.addEventListener("mouseenter",onImageEnter);
 
