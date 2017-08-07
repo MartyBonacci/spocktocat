@@ -86,8 +86,8 @@
 		<script>
 
 			// changes the value of the first number displayed
-			var valueOne = document.getElementById("firstNumber");
-			firstValue = 6;
+			var valueOne = document.getElementById("firstNumber").value;
+			// firstValue = 6;
 			valueOne.textContent = firstValue;
 
 			// changes the value of the second number displayed
