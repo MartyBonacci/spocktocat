@@ -1,4 +1,4 @@
-<script>
+
 
 // changes the value of the first number displayed
 var firstValue = parseFloat(document.getElementById("firstNumber").value);
@@ -47,5 +47,3 @@ var onMultiplyEnter = function() {
 	result.textContent = "=" + total;
 };
 times.addEventListener("mouseenter", onMultiplyEnter);
-
-</script>
