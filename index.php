@@ -57,7 +57,8 @@
 				<br/>
 				<br/>
 				<br/>
-				<h1 id="firstNumber">7</h1>
+				<input id="firstNumber" type="number">
+<!--				<h1 id="firstNumber">7</h1>  -->
 			</div>
 			<div class="col-md-2 operations">
 				<h1 id="add">+</h1>
@@ -101,37 +102,36 @@
 
 			// handles the calculations and display of the answer when mouse enter addition symbol
 			var plus = document.getElementById("add");
-			var onImageEnter = function() {
+			var onPlusEnter = function() {
 				var total = firstValue + secondValue;
 				result.textContent = "=" + total;
 			};
-			plus.addEventListener("mouseenter", onImageEnter);
-
+			plus.addEventListener("mouseenter", onPlusEnter);
 
 			// handles the calculations and display of the answer when mouse enter take away symbol
 			var takeAway = document.getElementById("subtract");
-			var onImageEnter = function() {
+			var onMinusEnter = function() {
 				var total = firstValue - secondValue;
 				result.textContent = "=" + total;
 			};
-			takeAway.addEventListener("mouseenter", onImageEnter);
+			takeAway.addEventListener("mouseenter", onMinusEnter);
 
 
 			// handles the calculations and display of the answer when mouse enter guzinto symbol
 			var goesInto = document.getElementById("divide");
-			var onImageEnter = function() {
+			var onDivisionEnter = function() {
 				var total = firstValue / secondValue;
 				result.textContent = "=" + total;
 			};
-			goesInto.addEventListener("mouseenter", onImageEnter);
+			goesInto.addEventListener("mouseenter", onDivisionEnter);
 
 			// handles the calculations and display of the answer when mouse enter multiplication symbol
 			var times = document.getElementById("multiply");
-			var onImageEnter = function() {
+			var onMultiplyEnter = function() {
 				var total = firstValue * secondValue;
 				result.textContent = "=" + total;
 			};
-			times.addEventListener("mouseenter", onImageEnter);
+			times.addEventListener("mouseenter", onMultiplyEnter);
 
 		</script>
 
