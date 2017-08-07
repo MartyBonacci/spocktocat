@@ -43,11 +43,14 @@
 		<!-- custom CSS stylesheet -->
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 
+		<!-- JavaScript file -->
+		<link rel="javascript" href="js/script.js"/>
+
 		<title>spocktocat javascript assignment</title>
 	</head>
 	<body>
 		<header>
-			<p>Mouse over a green operation symbol for an answer.</p>
+			<p>Enter values then mouse over a green operation symbol for an answer.</p>
 		</header>
 
 		<div class="row">
@@ -71,7 +74,8 @@
 				<br/>
 				<br/>
 				<br/>
-				<h1 id="secondNumber">5</h1>
+				<input id="secondNumber" type="number">
+				<!-- <h1 id="secondNumber">5</h1> -->
 			</div>
 			<div class="col-md-3">
 				<br/>
@@ -81,61 +85,6 @@
 				<h1 id="answer">= ?</h1>
 			</div>
 		</div>
-
-
-		<script>
-
-			// changes the value of the first number displayed
-			var valueOne = document.getElementById("firstNumber").value;
-			// firstValue = 6;
-			valueOne.textContent = firstValue;
-
-			// changes the value of the second number displayed
-			var valueTwo = document.getElementById("secondNumber");
-
-			secondValue = 9;
-			valueTwo.textContent = secondValue;
-
-			// changes the value of the answer displayed
-			var result = document.getElementById("answer");
-
-
-			// handles the calculations and display of the answer when mouse enter addition symbol
-			var plus = document.getElementById("add");
-			var onPlusEnter = function() {
-				var total = firstValue + secondValue;
-				result.textContent = "=" + total;
-			};
-			plus.addEventListener("mouseenter", onPlusEnter);
-
-			// handles the calculations and display of the answer when mouse enter take away symbol
-			var takeAway = document.getElementById("subtract");
-			var onMinusEnter = function() {
-				var total = firstValue - secondValue;
-				result.textContent = "=" + total;
-			};
-			takeAway.addEventListener("mouseenter", onMinusEnter);
-
-
-			// handles the calculations and display of the answer when mouse enter guzinto symbol
-			var goesInto = document.getElementById("divide");
-			var onDivisionEnter = function() {
-				var total = firstValue / secondValue;
-				result.textContent = "=" + total;
-			};
-			goesInto.addEventListener("mouseenter", onDivisionEnter);
-
-			// handles the calculations and display of the answer when mouse enter multiplication symbol
-			var times = document.getElementById("multiply");
-			var onMultiplyEnter = function() {
-				var total = firstValue * secondValue;
-				result.textContent = "=" + total;
-			};
-			times.addEventListener("mouseenter", onMultiplyEnter);
-
-		</script>
-
-
 	</body>
 </html>
 
