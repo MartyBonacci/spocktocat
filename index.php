@@ -48,7 +48,7 @@
 
 		<title>spocktocat javascript assignment</title>
 	</head>
-	<body>
+	<body onload="delay();">
 		<header>
 			<p>Enter values then mouse over a green operation symbol for an answer.</p>
 		</header>
@@ -61,7 +61,6 @@
 				<br/>
 				<br/>
 				<input id="firstNumber" type="number">
-<!--				<h1 id="firstNumber">7</h1>  -->
 			</div>
 			<div class="col-md-2 operations">
 				<h1 id="add">+</h1>
@@ -75,7 +74,6 @@
 				<br/>
 				<br/>
 				<input id="secondNumber" type="number">
-				<!-- <h1 id="secondNumber">5</h1> -->
 			</div>
 			<div class="col-md-3">
 				<br/>
