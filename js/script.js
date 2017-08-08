@@ -1,12 +1,11 @@
-function delay() {
 
 // changes the value of the first number displayed
-	var firstValue = parseFloat(document.getElementById("firstNumber").value);
+	var firstValue = document.getElementById("firstNumber").value;
 //			firstValue = valueOne.textContent;
 //valueOne.textContent = firstValue;
 
-// changes the value of the second number displayed
-	var secondValue = parseFloat(document.getElementById("secondNumber").value);
+// changes the value of the second number displayed parseFloat(
+	var secondValue = document.getElementById("secondNumber").value;
 
 //secondValue = 9;
 //valueTwo.textContent = secondValue;
@@ -47,5 +46,3 @@ function delay() {
 		result.textContent = "=" + total;
 	};
 	times.addEventListener("mouseenter", onMultiplyEnter);
-
-}

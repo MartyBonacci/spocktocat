@@ -48,7 +48,7 @@
 
 		<title>spocktocat javascript assignment</title>
 	</head>
-	<body onload="delay();">
+	<body>
 		<header>
 			<p>Enter values then mouse over a green operation symbol for an answer.</p>
 		</header>
