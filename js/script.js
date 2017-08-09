@@ -32,7 +32,7 @@ goesInto.addEventListener("mouseenter", onDivisionEnter);
 function onMultiplyEnter () {
 	var result = document.getElementById("answer").value;
 //	var total = document.getElementById("testanswer");
-	var firstValue = applyFirstValue();
+	var firstValue = applyFirstValue(firstValue);
 	var secondValue = applySecondValue();
 	console.log(firstValue);
 	console.log(secondValue);
@@ -44,7 +44,7 @@ function onMultiplyEnter () {
 
 
 
-function applyFirstValue("test1") {
+function applyFirstValue(firstValue) {
 	var firstValue = document.getElementById("test1");
 	var entered = document.getElementById("firstNumber").value;
 	firstValue.textContent = entered;
