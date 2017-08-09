@@ -60,7 +60,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="firstNumber" type="number"/>
+				<input id="firstNumber" type="number" oninput="applyFirstValue()"/>
 			</div>
 			<div class="col-md-2 operations">
 				<h1 id="add">+</h1>
@@ -73,7 +73,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="secondNumber" type="number"/>
+				<input id="secondNumber" type="number" oninput="applySecondValue()"/>
 			</div>
 			<div class="col-md-3">
 				<br/>
@@ -81,7 +81,6 @@
 				<br/>
 				<br/>
 				<h1 id="answer">= ?</h1>
-				<p id="first">firstValue?</p>
 			</div>
 		</div>
 	</body>

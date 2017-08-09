@@ -36,11 +36,12 @@ times.addEventListener("mouseenter", onMultiplyEnter);
 
 
 
-
-var resultTwo = document.getElementById("first");
-
-var entered = document.getElementById("firstNumber");
-var onInput = function() {
-	resultTwo.textContent = "1stValue" + entered;
+var applyFirstValue = function() {
+	var entered = document.getElementById("firstNumber").value;
+	firstValue.textContent = entered;
 };
-entered.addEventListener("input", onInput);
+
+var applySecondValue = function() {
+	var entered = document.getElementById("secondNumber").value;
+	secondValue.textContent = entered;
+};
