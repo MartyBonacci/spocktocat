@@ -30,7 +30,7 @@ goesInto.addEventListener("mouseenter", onDivisionEnter);
 // handles the calculations and display of the answer when mouse enter multiplication symbol
 
 function onMultiplyEnter () {
-	var result = document.getElementById("answer");
+	var result = document.getElementById("answer").value;
 //	var total = document.getElementById("testanswer");
 	var firstValue = applyFirstValue();
 	var secondValue = applySecondValue();
@@ -43,7 +43,7 @@ function onMultiplyEnter () {
 
 
 function applyFirstValue() {
-	var firstValue = document.getElementById("test1");
+	var firstValue = document.getElementById("test1").value;
 	var entered = document.getElementById("firstNumber").value;
 	firstValue.textContent = entered;
 };
