@@ -59,4 +59,7 @@ window.onload = function() {
 	add.addEventListener("mouseenter", onPlusEnter);
 	takeAway.addEventListener("mouseenter", onMinusEnter);
 	goesInto.addEventListener("mouseenter", onDivisionEnter);
+
+	document.getElementById("firstNumber").value = Math.PI;
+	document.getElementById("secondNumber").value = Math.E;
 };
