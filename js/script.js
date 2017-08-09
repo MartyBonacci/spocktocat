@@ -34,8 +34,8 @@ goesInto.addEventListener("mouseenter", onDivisionEnter);
 function onMultiplyEnter () {
 	var result = document.getElementById("answer");
 //	var total = document.getElementById("testanswer");
-//	var firstValue = applyFirstValue(firstValue);
-//	var secondValue = applySecondValue();
+	var firstValue = applyFirstValue(firstValue);
+	var secondValue = applySecondValue();
 	console.log(firstValue);
 	console.log(secondValue);
 	var total = firstValue * secondValue;
