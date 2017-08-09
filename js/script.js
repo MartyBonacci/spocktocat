@@ -34,7 +34,7 @@ function onMultiplyEnter () {
 //	var total = document.getElementById("testanswer");
 	var firstValue = applyFirstValue();
 	var secondValue = applySecondValue();
-	total = firstValue * secondValue;
+	var total = firstValue * secondValue;
 	result.textContent = total;
 
 };
