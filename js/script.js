@@ -1,60 +1,67 @@
 
-// changes the value of the answer displayed
-//var result = document.getElementById("answer");
-//var firstValue;
-//var secondValue;
-/*
+// accessor for the first value
+function getFirstValue() {
+	var firstValue = parseFloat(document.getElementById("firstNumber").value);
+	return(firstValue);
+}
+
+// accessor for second value
+function getSecondValue() {
+	var secondValue = parseFloat(document.getElementById("secondNumber").value);
+	return(secondValue);
+}
+
+// mutator for answer
+function setAnswer(newResult) {
+	document.getElementById("answer").innerHTML = "= " + newResult;
+}
+
 // handles the calculations and display of the answer when mouse enter addition symbol
-var plus = document.getElementById("add");
-var onPlusEnter = function() {
+function onPlusEnter() {
+	var firstValue = getFirstValue();
+	var secondValue = getSecondValue();
 	var total = firstValue + secondValue;
-	result.textContent = "=" + total;
-};
-plus.addEventListener("mouseenter", onPlusEnter);
+	setAnswer(total);
+}
 
 // handles the calculations and display of the answer when mouse enter take away symbol
-var takeAway = document.getElementById("subtract");
-var onMinusEnter = function() {
+function onMinusEnter() {
+	var firstValue = getFirstValue();
+	var secondValue = getSecondValue();
 	var total = firstValue - secondValue;
-	result.textContent = "=" + total;
-};
-takeAway.addEventListener("mouseenter", onMinusEnter);
+	setAnswer(total);
+}
 
 
 // handles the calculations and display of the answer when mouse enter guzinto symbol
-var goesInto = document.getElementById("divide");
-var onDivisionEnter = function() {
+function onDivisionEnter() {
+	var firstValue = getFirstValue();
+	var secondValue = getSecondValue();
 	var total = firstValue / secondValue;
-	result.textContent = "=" + total;
-};
-goesInto.addEventListener("mouseenter", onDivisionEnter);
-*/
+	setAnswer(total);
+}
+
 // handles the calculations and display of the answer when mouse enter multiplication symbol
-
 function onMultiplyEnter () {
-	var result = document.getElementById("answer");
-//	var total = document.getElementById("testanswer");
-//	var firstValue = applyFirstValue(firstValue);
-//	var secondValue = applySecondValue();
-	console.log(firstValue);
-	console.log(secondValue);
+	var firstValue = getFirstValue();
+	var secondValue = getSecondValue();
 	var total = firstValue * secondValue;
-	result.textContent = total;
-
-};
-
-
-
+	setAnswer(total);
+}
 
 function applyFirstValue() {
-	var window.firstValue = document.getElementById("test1");
+	var firstValue = document.getElementById("test1");
 	var entered = document.getElementById("firstNumber").value;
-	firstValue.textContent = entered;
-};
-
+	firstValue.innerHTML = entered;
+}
 
 function applySecondValue() {
-	var window.secondValue = document.getElementById("test2");
+	var secondValue = document.getElementById("test2");
 	var entered = document.getElementById("secondNumber").value;
-	secondValue.textContent = entered;
+	secondValue.innerHTML = entered;
+}
+
+window.onload = function() {
+	document.getElementById("firstNumber").value = Math.PI;
+	document.getElementById("secondNumber").value = Math.E;
 };
