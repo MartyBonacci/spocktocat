@@ -66,7 +66,7 @@
 				<h1 id="add">+</h1>
 				<h1 id="subtract">-</h1>
 				<h1 id="divide">/</h1>
-				<h1 id="multiply">*</h1>
+				<h1 id="multiply" onmouseenter="onMultiplyEnter()">*</h1>
 			</div>
 			<div class="col-md-2">
 				<br/>

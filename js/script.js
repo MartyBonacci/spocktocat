@@ -1,7 +1,6 @@
+
 // changes the value of the answer displayed
 var result = document.getElementById("answer");
-
-
 
 // handles the calculations and display of the answer when mouse enter addition symbol
 var plus = document.getElementById("add");
@@ -29,12 +28,13 @@ var onDivisionEnter = function() {
 goesInto.addEventListener("mouseenter", onDivisionEnter);
 
 // handles the calculations and display of the answer when mouse enter multiplication symbol
-var times = document.getElementById("multiply");
-var onMultiplyEnter = function() {
-	var total = firstValue * secondValue;
+
+function onMultiplyEnter () {
+	var result = document.getElementById("multiply");
+	var total = applyFirstValue() * applySecondValue();
 	result.textContent = "=" + total;
 };
-times.addEventListener("mouseenter", onMultiplyEnter);
+
 
 
 
