@@ -1,7 +1,6 @@
 // changes the value of the answer displayed
 var result = document.getElementById("answer");
-var firstValue = 7;
-var secondValue = 9;
+
 
 
 // handles the calculations and display of the answer when mouse enter addition symbol
