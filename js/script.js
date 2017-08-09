@@ -30,12 +30,12 @@ goesInto.addEventListener("mouseenter", onDivisionEnter);
 // handles the calculations and display of the answer when mouse enter multiplication symbol
 
 function onMultiplyEnter () {
-	var result = document.getElementById("answer").value;
+	var result = document.getElementById("answer");
 //	var total = document.getElementById("testanswer");
 	var firstValue = applyFirstValue();
 	var secondValue = applySecondValue();
 	var total = firstValue * secondValue;
-	result.textContent = total;
+	var result = total;
 
 };
 
