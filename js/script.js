@@ -41,7 +41,6 @@ var resultTwo = document.getElementById("first");
 
 var entered = document.getElementById("firstNumber");
 var onInput = function() {
-	var firstVal = entered;
-	resultTwo.textContent = "1stValue" + firstVal;
+	resultTwo.textContent = "1stValue" + entered;
 };
 entered.addEventListener("input", onInput);
