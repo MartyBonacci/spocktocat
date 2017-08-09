@@ -83,6 +83,7 @@
 				<h1 id="answer">= ?</h1>
 			</div>
 		</div>
+		<img id="piggy" onmouseenter="onpiggy();" src="" alt="oink">
 	</body>
 </html>
 
