@@ -44,7 +44,7 @@ function onMultiplyEnter () {
 
 
 
-function applyFirstValue() {
+function applyFirstValue("test1") {
 	var firstValue = document.getElementById("test1");
 	var entered = document.getElementById("firstNumber").value;
 	firstValue.textContent = entered;
