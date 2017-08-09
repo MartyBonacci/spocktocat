@@ -1,6 +1,8 @@
 
 // changes the value of the answer displayed
 var result = document.getElementById("answer");
+var firstValue;
+var secondValue;
 
 // handles the calculations and display of the answer when mouse enter addition symbol
 var plus = document.getElementById("add");
@@ -30,10 +32,10 @@ goesInto.addEventListener("mouseenter", onDivisionEnter);
 // handles the calculations and display of the answer when mouse enter multiplication symbol
 
 function onMultiplyEnter () {
-	var result = document.getElementById("answer").value;
+	var result = document.getElementById("answer");
 //	var total = document.getElementById("testanswer");
-	var firstValue = applyFirstValue(firstValue);
-	var secondValue = applySecondValue();
+//	var firstValue = applyFirstValue(firstValue);
+//	var secondValue = applySecondValue();
 	console.log(firstValue);
 	console.log(secondValue);
 	var total = firstValue * secondValue;
