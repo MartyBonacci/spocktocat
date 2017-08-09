@@ -49,18 +49,6 @@ function onMultiplyEnter () {
 	setAnswer(total);
 }
 
-function applyFirstValue() {
-	var firstValue = document.getElementById("test1");
-	var entered = document.getElementById("firstNumber").value;
-	firstValue.innerHTML = entered;
-}
-
-function applySecondValue() {
-	var secondValue = document.getElementById("test2");
-	var entered = document.getElementById("secondNumber").value;
-	secondValue.innerHTML = entered;
-}
-
 window.onload = function() {
 	document.getElementById("firstNumber").value = Math.PI;
 	document.getElementById("secondNumber").value = Math.E;
