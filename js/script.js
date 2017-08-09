@@ -38,13 +38,14 @@ var onMultiplyEnter = function() {
 times.addEventListener("mouseenter", onMultiplyEnter);
 
 
-
-var applyFirstValue = function() {
+var firstValue = document.getElementById("test1");
+function applyFirstValue() {
 	var entered = document.getElementById("firstNumber").value;
 	firstValue.textContent = entered;
 };
 
-var applySecondValue = function() {
+var secondValue = document.getElementById("test2");
+function applySecondValue() {
 	var entered = document.getElementById("secondNumber").value;
 	secondValue.textContent = entered;
 };
