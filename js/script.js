@@ -31,11 +31,11 @@ goesInto.addEventListener("mouseenter", onDivisionEnter);
 
 function onMultiplyEnter () {
 	var result = document.getElementById("answer");
-	total = document.getElementById("testanswer");
+//	var total = document.getElementById("testanswer");
 	var firstValue = applyFirstValue();
 	var secondValue = applySecondValue();
 	total = firstValue * secondValue;
-	result.textContent = "=" + total;
+	result.textContent = total;
 
 };
 
