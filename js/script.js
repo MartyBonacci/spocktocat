@@ -1,16 +1,18 @@
+var firstValue = document.getElementById("firstNumber").value;
+var secondValue = document.getElementById("secondNumber").value;
 
+var onKeyUp = function() {
 
-var values[]=function() {
-
-}
+};
+firstValue.addEventListener("onkeyup", onKeyUp);
 
 // changes the value of the first number displayed
-	var firstValue = document.getElementById("firstNumber").value;
+// 	var firstValue = document.getElementById("firstNumber").value;
 //			firstValue = valueOne.textContent;
 //valueOne.textContent = firstValue;
 
 // changes the value of the second number displayed parseFloat(
-	var secondValue = document.getElementById("secondNumber").value;
+// 	var secondValue = document.getElementById("secondNumber").value;
 
 //secondValue = 9;
 //valueTwo.textContent = secondValue;
