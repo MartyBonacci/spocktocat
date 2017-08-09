@@ -4,7 +4,7 @@ var firstVal=function() {
 	// grabs the value of the first number input
 	var firstValue = document.getElementById("firstNumber").value;
 	result.numberValue= firstValue;
-}
+};
 
 var secondVal=function() {
 // grabs the value of the second number input
