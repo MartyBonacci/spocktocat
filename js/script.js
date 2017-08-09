@@ -1,4 +1,9 @@
 
+
+var values[]=function() {
+
+}
+
 // changes the value of the first number displayed
 	var firstValue = document.getElementById("firstNumber").value;
 //			firstValue = valueOne.textContent;

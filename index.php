@@ -60,7 +60,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="firstNumber" type="number">
+				<input id="firstNumber" type="number"/>
 			</div>
 			<div class="col-md-2 operations">
 				<h1 id="add">+</h1>
@@ -73,7 +73,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="secondNumber" type="number">
+				<input id="secondNumber" type="number"/>
 			</div>
 			<div class="col-md-3">
 				<br/>
