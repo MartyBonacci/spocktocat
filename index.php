@@ -60,20 +60,20 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="firstNumber" type="number" oninput="applyFirstValue()"/>
+				<input id="firstNumber" type="number" />
 			</div>
 			<div class="col-md-2 operations">
-				<h1 id="add">+</h1>
-				<h1 id="subtract">-</h1>
-				<h1 id="divide">/</h1>
-				<h1 id="multiply" onmouseenter="onMultiplyEnter()">*</h1>
+				<h1 id="add" onmouseenter="onPlusEnter();">+</h1>
+				<h1 id="subtract" onmouseenter="onMinusEnter();">-</h1>
+				<h1 id="divide" onmouseenter="onDivisionEnter();">/</h1>
+				<h1 id="multiply" onmouseenter="onMultiplyEnter();">*</h1>
 			</div>
 			<div class="col-md-2">
 				<br/>
 				<br/>
 				<br/>
 				<br/>
-				<input id="secondNumber" type="number" oninput="applySecondValue()"/>
+				<input id="secondNumber" type="number" />
 			</div>
 			<div class="col-md-3">
 				<br/>
@@ -81,9 +81,6 @@
 				<br/>
 				<br/>
 				<h1 id="answer">= ?</h1>
-				<p id="test1">test 1</p>
-				<p id="test2">test 2</p>
-				<p id="testanswer">test answer</p>
 			</div>
 		</div>
 	</body>
