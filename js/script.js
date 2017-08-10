@@ -57,7 +57,7 @@ window.onload = function() {
 // get some bacon ipsum using AJAX call
 $(document).ready(function() {
 	$('#yummy').click(function() {
-		$.ajax({url: "https://baconipsum.com/api/?type=meat-and-filler&paras=2&start-with-lorem=1",
+		$.ajax({url: "https://baconipsum.com/api/?type=meat-and-filler&paras=3&start-with-lorem=1",
 			success: function(result) {
 				$('#yummyText').html(result);
 			}});
