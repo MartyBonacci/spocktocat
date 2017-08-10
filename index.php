@@ -49,48 +49,51 @@
 		<title>spocktocat javascript assignment</title>
 	</head>
 	<body>
-		<header>
-			<p>Enter values then mouse over a green operation symbol for an answer.</p>
-		</header>
+		<div class="container">
+			<header>
+				<p>Enter values then mouse over a green operation symbol for an answer.</p>
+			</header>
 
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-2">
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<input id="firstNumber" type="number"/>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-2">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<input id="firstNumber" type="number"/>
+				</div>
+				<div class="col-md-2 operations">
+					<h1 id="add" onmouseenter="onPlusEnter();">+</h1>
+					<h1 id="subtract" onmouseenter="onMinusEnter();">-</h1>
+					<h1 id="divide" onmouseenter="onDivisionEnter();">/</h1>
+					<h1 id="multiply" onmouseenter="onMultiplyEnter();">*</h1>
+				</div>
+				<div class="col-md-2">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<input id="secondNumber" type="number"/>
+				</div>
+				<div class="col-md-3">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<h1 id="answer">= ?</h1>
+				</div>
 			</div>
-			<div class="col-md-2 operations">
-				<h1 id="add" onmouseenter="onPlusEnter();">+</h1>
-				<h1 id="subtract" onmouseenter="onMinusEnter();">-</h1>
-				<h1 id="divide" onmouseenter="onDivisionEnter();">/</h1>
-				<h1 id="multiply" onmouseenter="onMultiplyEnter();">*</h1>
-			</div>
-			<div class="col-md-2">
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<input id="secondNumber" type="number"/>
-			</div>
-			<div class="col-md-3">
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<h1 id="answer">= ?</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<button type="submit" id="yummy" class="center-block"  >
-					<img src="https://baconmockup.com/200/200" class="img-responsive center-block" alt="yummy">Click for yummy goodness
-				</button>
-			</div>
-			<div class="col-md-8">
-				<p id="yummyText"></p>
+			<div class="row">
+				<div class="col-md-3">
+					<button type="submit" id="yummy" class="center-block">
+						<img src="https://baconmockup.com/200/200" class="img-responsive center-block" alt="yummy">Click for
+						yummy goodness
+					</button>
+				</div>
+				<div class="col-md-8">
+					<p id="yummyText"></p>
+				</div>
 			</div>
 		</div>
 	</body>
