@@ -88,7 +88,7 @@
 				<button type="submit" id="yummy">
 					<img src="https://baconmockup.com/200/200" class="img-responsive img-circle center-block" alt="yummy">Click for yummy goodness
 				</button>
-				<p id="yummyText">Click for yummy goodness.</p>
+				<p class="col-md-9" id="yummyText"></p>
 			</div>
 		</div>
 	</body>
