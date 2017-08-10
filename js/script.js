@@ -54,46 +54,12 @@ window.onload = function() {
 	document.getElementById("secondNumber").value = Math.E;
 };
 
-
-
-
-
+// get some bacon ipsum using AJAX call
 $(document).ready(function() {
 	$('#yummy').click(function() {
-		$.ajax({url: "https://baconipsum.com/api/?type=meat-and-filler&paras=1&start-with-lorem=1",
+		$.ajax({url: "https://baconipsum.com/api/?type=meat-and-filler&paras=2&start-with-lorem=1",
 			success: function(result) {
 				$('#yummyText').html(result);
 			}});
 	});
 });
-
-/* experimenting with ajax call
-
-$.ajax({
-	method: "GET",
-	url: "foo.php" }).done(function(reply) {
-		console.log("AJAX server reply: " + reply);
-	});
-
-
-function onpiggy() {
-$(document).ready(function()
-{
-	$("#baconButton").click(function()
-	{
-		$.getJSON('https://baconipsum.com/api/?callback=?',
-			{ 'type':'meat-and-filler', 'start-with-lorem':'1', 'paras':'3' },
-			function(baconGoodness)
-			{
-				if (baconGoodness && baconGoodness.length > 0)
-				{
-					$("#baconIpsumOutput").html('');
-					for (var i = 0; i < baconGoodness.length; i++)
-						$("#baconIpsumOutput").append('<p>' + baconGoodness[i] + '</p>');
-					$("#baconIpsumOutput").show();
-				}
-			});
-	});
-});
-}
-*/

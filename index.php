@@ -85,10 +85,12 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<button type="submit" id="yummy">
-					<img src="https://baconmockup.com/200/200" class="img-responsive img-circle center-block" alt="yummy">Click for yummy goodness
+				<button type="submit" id="yummy" class="center-block"  >
+					<img src="https://baconmockup.com/200/200" class="img-responsive center-block" alt="yummy">Click for yummy goodness
 				</button>
-				<p class="col-md-9" id="yummyText"></p>
+			</div>
+			<div class="col-md-8">
+				<p id="yummyText"></p>
 			</div>
 		</div>
 	</body>
