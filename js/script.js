@@ -56,6 +56,17 @@ window.onload = function() {
 
 
 
+
+
+$(document).ready(function() {
+	$('#yummy').click(function() {
+		$.ajax({url: "https://baconipsum.com/api/?type=meat-and-filler&paras=1&start-with-lorem=1",
+			success: function(result) {
+				$('#yummyText').html(result);
+			}});
+	});
+});
+
 /* experimenting with ajax call
 
 $.ajax({

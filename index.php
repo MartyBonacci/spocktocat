@@ -60,7 +60,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="firstNumber" type="number" />
+				<input id="firstNumber" type="number"/>
 			</div>
 			<div class="col-md-2 operations">
 				<h1 id="add" onmouseenter="onPlusEnter();">+</h1>
@@ -73,7 +73,7 @@
 				<br/>
 				<br/>
 				<br/>
-				<input id="secondNumber" type="number" />
+				<input id="secondNumber" type="number"/>
 			</div>
 			<div class="col-md-3">
 				<br/>
@@ -83,7 +83,14 @@
 				<h1 id="answer">= ?</h1>
 			</div>
 		</div>
-		<img id="piggy" onmouseenter="onpiggy();" src="" alt="oink">
+		<div class="row">
+			<div class="col-md-3">
+				<button type="submit" id="yummy">
+					<img src="https://baconmockup.com/200/200" class="img-responsive img-circle center-block" alt="yummy">Click for yummy goodness
+				</button>
+				<p id="yummyText">Click for yummy goodness.</p>
+			</div>
+		</div>
 	</body>
 </html>
 
