@@ -10,6 +10,11 @@ function getSecondValue() {
 	return (secondValue); // return is used to return value when a function is called
 }
 
+function getOperation(){
+	onmouseenter="getid.call(this)";
+	return (this);
+}
+
 // mutator for answer
 function setAnswer(newResult) {
 	document.getElementById("answer").innerHTML = "= " + newResult;
@@ -40,10 +45,10 @@ function onDivisionEnter() {
 }
 
 // handles the calculations and displays the answer when mouse enter any operation symbol
-function onOperationEnter(operator) {
+function onOperationEnter() {
 	var firstValue = getFirstValue();
 	var secondValue = getSecondValue();
-	var operation = operator;
+	var operation = getOperation();
 
 	function doMath() {
 		switch(operation) {
@@ -61,6 +66,7 @@ function onOperationEnter(operator) {
 		}
 		setAnswer(total);
 	}
+	doMath();
 }
 
 // handles the calculations and display of the answer when mouse enter multiplication symbol
