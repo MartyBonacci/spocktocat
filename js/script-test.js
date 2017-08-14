@@ -48,9 +48,12 @@ function onDivisionEnter() {
 function onOperationEnter() {
 	var firstValue = getFirstValue();
 	var secondValue = getSecondValue();
-	var operation = getOperation();
-	console.log(firstValue + operation + secondValue)
-
+//	var operation = getOperation();
+	console.log(firstValue, operation, secondValue);
+	var total = firstValue+secondValue;
+	setAnswer(total);
+}
+/**
 	function doMath() {
 		switch(operation) {
 			case "+":
@@ -69,7 +72,7 @@ function onOperationEnter() {
 	}
 	doMath();
 }
-
+*/
 // handles the calculations and display of the answer when mouse enter multiplication symbol
 function onMultiplyEnter() {
 	var firstValue = getFirstValue();
