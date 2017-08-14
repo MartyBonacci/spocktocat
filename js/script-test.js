@@ -11,7 +11,7 @@ function getSecondValue() {
 }
 
 function getOperation(){
-	onmouseenter="getid.call(this)";
+	onmouseenter=this.attribute("id");
 	return (this);
 }
 
