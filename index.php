@@ -44,7 +44,7 @@
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 
 		<!-- JavaScript file -->
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/script2.js"></script>
 
 		<title>spocktocat javascript assignment</title>
 	</head>

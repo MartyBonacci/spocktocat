@@ -1,14 +1,18 @@
-
 // accessor for the first value
 function getFirstValue() {
 	var firstValue = parseFloat(document.getElementById("firstNumber").value);
-	return(firstValue); // return is used to return value when a function is called
+	return (firstValue); // return is used to return value when a function is called
 }
 
 // accessor for second value
 function getSecondValue() {
 	var secondValue = parseFloat(document.getElementById("secondNumber").value);
-	return(secondValue); // return is used to return value when a function is called
+	return (secondValue); // return is used to return value when a function is called
+}
+
+function getOperation(){
+	onmouseenter=this.attribute("id");
+	return (this);
 }
 
 // mutator for answer
@@ -40,8 +44,37 @@ function onDivisionEnter() {
 	setAnswer(total); // calls mutator function which sends the total out to the universe
 }
 
+// handles the calculations and displays the answer when mouse enter any operation symbol
+function onOperationEnter() {
+	var firstValue = getFirstValue();
+	var secondValue = getSecondValue();
+//	var operation = getOperation();
+//	console.log(firstValue, operation, secondValue);
+	var total = firstValue+secondValue;
+	setAnswer(total);
+}
+/**
+	function doMath() {
+		switch(operation) {
+			case "+":
+				var total = firstValue + secondValue;
+				break;
+			case "-":
+				var total = firstValue - secondValue;
+				break;
+			case "/":
+				var total = firstValue / secondValue;
+				break;
+			case "*":
+				var total = firstValue * secondValue;
+		}
+		setAnswer(total);
+	}
+	doMath();
+}
+*/
 // handles the calculations and display of the answer when mouse enter multiplication symbol
-function onMultiplyEnter () {
+function onMultiplyEnter() {
 	var firstValue = getFirstValue();
 	var secondValue = getSecondValue();
 	var total = firstValue * secondValue;
@@ -57,9 +90,11 @@ window.onload = function() {
 // get some bacon ipsum using AJAX call
 $(document).ready(function() {
 	$('#yummy').click(function() {
-		$.ajax({url: "https://baconipsum.com/api/?type=meat-and-filler&paras=3&start-with-lorem=1",
+		$.ajax({
+			url: "https://baconipsum.com/api/?type=meat-and-filler&paras=3&start-with-lorem=1",
 			success: function(result) {
 				$('#yummyText').html(result);
-			}});
+			}
+		});
 	});
 });
