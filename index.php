@@ -64,9 +64,9 @@
 					<input id="firstNumber" type="number"/>
 				</div>
 				<div class="col-md-2 operations">
-					<h1 id="add" onmouseenter="onOperationEnter();">+</h1>
-					<h1 id="subtract" onmouseenter="onMinusEnter();">-</h1>
-					<h1 id="divide" onmouseenter="onDivisionEnter();">/</h1>
+					<h1 id="add" onmouseenter="onOperandEnter();">+</h1>
+					<h1 id="subtract" onmouseenter="onOperandEnter();">-</h1>
+					<h1 id="divide" onmouseenter="onOperandEnter();">/</h1>
 					<h1 id="multiply" onmouseenter="onMultiplyEnter();">*</h1>
 				</div>
 				<div class="col-md-2">

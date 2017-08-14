@@ -22,36 +22,11 @@ function setAnswer(newResult) {
 	document.getElementById("answer").innerHTML = "= " + newResult;
 }
 
-// handles the calculations and display of the answer when mouse enter addition symbol
-function onPlusEnter() {
-	var firstValue = getFirstValue();
-	var secondValue = getSecondValue();
-	var total = firstValue + secondValue;
-	setAnswer(total); // calls mutator function which sends the total out to the universe
-}
-
-// handles the calculations and display of the answer when mouse enter take away symbol
-function onMinusEnter() {
-	var firstValue = getFirstValue();
-	var secondValue = getSecondValue();
-	var total = firstValue - secondValue;
-	setAnswer(total); // calls mutator function which sends the total out to the universe
-}
-
-// handles the calculations and display of the answer when mouse enter guzinto symbol
-function onDivisionEnter() {
-	var firstValue = getFirstValue();
-	var secondValue = getSecondValue();
-	var total = firstValue / secondValue;
-	setAnswer(total); // calls mutator function which sends the total out to the universe
-}
-
 // handles the calculations and displays the answer when mouse enter any operation symbol
-function onOperationEnter() {
+function onOperandEnter() {
 	var firstValue = getFirstValue();
 	var secondValue = getSecondValue();
 	var operation = getOperation();
-	console.log(firstValue, operation, secondValue);
 
 	function doMath() {
 		switch(operation) {
