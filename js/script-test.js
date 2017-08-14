@@ -49,6 +49,7 @@ function onOperationEnter() {
 	var firstValue = getFirstValue();
 	var secondValue = getSecondValue();
 	var operation = getOperation();
+	console.log(firstValue + operation + secondValue)
 
 	function doMath() {
 		switch(operation) {
