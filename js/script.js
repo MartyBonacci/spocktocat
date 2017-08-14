@@ -53,16 +53,16 @@ function onOperationEnter() {
 
 	function doMath() {
 		switch(operation) {
-			case "+":
+			case "add":
 				var total = firstValue + secondValue;
 				break;
-			case "-":
+			case "subtract":
 				var total = firstValue - secondValue;
 				break;
-			case "/":
+			case "divide":
 				var total = firstValue / secondValue;
 				break;
-			case "*":
+			case "multiply":
 				var total = firstValue * secondValue;
 		}
 		setAnswer(total);
