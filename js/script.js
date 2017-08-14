@@ -12,6 +12,7 @@ function getSecondValue() {
 
 function getOperation(){
 	onmouseenter=this.id;
+	alert("++++++");
 	return (this);
 }
 
