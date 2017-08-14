@@ -69,7 +69,6 @@ function onOperationEnter() {
 		}
 		setAnswer(total);
 	}
-	doMath();
 }
 // handles the calculations and display of the answer when mouse enter multiplication symbol
 function onMultiplyEnter() {
