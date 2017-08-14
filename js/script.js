@@ -10,6 +10,7 @@ function getSecondValue() {
 	return (secondValue); // return is used to return value when a function is called
 }
 
+// accessor for operation id
 function getOperation(){
 	onmouseenter=this.id;
 	alert("++++++");
